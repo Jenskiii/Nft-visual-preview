@@ -1,0 +1,168 @@
+/*base styling*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+body{
+    background-color:hsl(217, 54%, 11%);
+    max-width: 1444px;
+}
+
+h1{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+h4{
+    color: hsl(178, 100%, 50%);
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+    font-size: .8rem;
+}
+
+p span{
+    font-size: .8rem;
+    color: gainsboro;
+}
+
+hr{
+margin-top: 10px;
+border: 1px solid hsl(215, 32%, 27%);
+}
+
+/*card text styling*/
+
+.container-position{
+    display: grid;
+    grid-template: 125px 1fr 125px / 1fr;
+}
+
+.container{
+    background-color: hsl(216, 50%, 16%);
+    max-width: 250px;
+    min-height: 380px;
+    border-radius: 15px;
+    margin: auto;
+    grid-row: 2;
+}
+
+.image-container{
+    border-radius: 5px;
+    background-image: url(/images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 15px;
+    min-height: 200px;
+    max-width: 100%;
+}
+
+
+.text-container{
+    margin: 0 15px;
+}
+
+.p-container{
+    margin: 10px 0;
+}
+
+.title{
+    cursor: pointer;
+}
+
+.title:active{
+    color: aqua;
+}
+
+/*active animation banner*/
+
+.overlay{
+    position: absolute;
+    top:37.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+    height: 200px;
+    width: 220px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.content{
+    position: absolute;
+    height: 200px;
+    width: 220px;
+    border-radius: 5px;
+    transform: scale(0.8);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container:active .overlay {
+    opacity:0.6;
+}
+
+
+/*Logo styling*/
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+display: flex;
+align-items: center;
+}
+
+.logo svg{
+    height: 18px;
+    width: 18px;
+transform: scale(0.6);
+}
+
+.logo p,h4{
+padding-left: 1px;
+}
+
+
+/*footer*/
+.footer{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    
+}
+
+.footer img{
+    max-width: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.jules{
+    cursor: pointer;
+}
+
+.jules:active{
+    color: aqua;
+}
+
+
+
+
